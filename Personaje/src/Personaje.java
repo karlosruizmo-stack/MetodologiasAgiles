@@ -17,7 +17,7 @@ public class Personaje {
 
     public void atacarFisico(Personaje enemigo) {
         if (random.nextInt(100) < 30) {
-            System.out.println(nombre + " intentó atacar pero falló.");
+            System.out.println(nombre + " fallo.");
         } else {
             int daño = 15 + random.nextInt(10);
             System.out.println(nombre + " golpea a " + enemigo.getNombre() + " por " + daño + " de daño.");
@@ -33,7 +33,7 @@ public class Personaje {
             System.out.println(nombre + " lanza un hechizo a " + enemigo.getNombre() + " por " + daño + " de daño!");
             enemigo.recibirDaño(daño);
         } else {
-            System.out.println(nombre + " no tiene suficiente maná.");
+            System.out.println(nombre + " no tienes suficiente maná.");
         }
     }
 
